@@ -92,21 +92,22 @@ RMSE (Root Mean Squared Error)
 
 R² Score
 
-Summary:
-Model	MAE	RMSE	R²
-Linear Regression	~2500	~3000	~0.65
-Random Forest	~1800	~2200	~0.82
-Random Forest (Tuned)	145.9	439.7	0.9998
+**Summary:**
+Model	                  MAE	                    RMSE	            R²
+Linear Regression	      ~2500	                  ~3000	            ~0.65
+Random Forest	          ~1800	                  ~2200	            ~0.82
+Random Forest (Tuned)	  145.9	                   439.7	           0.9998
+
 Random Forest significantly outperformed Linear Regression.
 
-🔁 Cross‑Validation
+🔁 **Cross‑Validation**
 5‑fold CV was applied to validate model robustness.
 
 Linear Regression: Mean R² = 1.0
 
 Random Forest: Mean R² ≈ 0.9981
 
-📈 Visualisations
+📈 **Visualisations**
 The notebook includes:
 
 Histograms
@@ -121,7 +122,7 @@ Cross‑validation boxplots
 
 Comparative bar charts (MAE/RMSE)
 
-🧠 Key Insights
+🧠 **Key Insights**
 Original Price is the strongest predictor of Selling Price
 
 Discounts influence price but do not change overall pricing trends
@@ -130,7 +131,7 @@ RAM and Storage have moderate impact
 
 Brand has limited influence compared to technical specifications
 
-🚀 Future Improvements
+🚀 **Future Improvements**
 Add advanced models (XGBoost, SVR)
 
 Expand feature engineering
