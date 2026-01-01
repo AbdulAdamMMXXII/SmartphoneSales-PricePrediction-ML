@@ -1,10 +1,10 @@
-# 📱 Smartphone Sales Price Prediction  
+#  Smartphone Sales Price Prediction  
 A supervised machine learning project for predicting smartphone selling prices using the **Smartphones Sales Dataset** from Kaggle. 
 This repository contains the full workflow, including EDA, preprocessing, modelling, evaluation and visualisations.
 
 ---
 
-## 📊 Project Overview  
+## Project Overview  
 This project investigates how smartphone specifications and commercial attributes influence selling price. 
 Using regression techniques, the goal is to build accurate predictive models and analyse which features contribute most to pricing behaviour.
 
@@ -19,7 +19,7 @@ The workflow includes:
 
 ---
 
-## 📁 Dataset  
+## Dataset  
 **Source:** Kaggle – Smartphones Sales Dataset  
 Link: https://www.kaggle.com/datasets/yaminh/smartphone-sale-dataset/data  
 
@@ -36,26 +36,26 @@ Link: https://www.kaggle.com/datasets/yaminh/smartphone-sale-dataset/data
 
 ---
 
-## 🧹 Data Preprocessing  
+## Data Preprocessing  
 The following transformations were applied:
 
-### ✔ Missing Value Handling  
+### Missing Value Handling  
 - **Memory & Storage:** Mode imputation  
 - **Rating:** Mean imputation  
 
-### ✔ Data Cleaning  
+### Data Cleaning  
 - Extracted numeric values from RAM/Storage (e.g., “8GB” → 8)  
 - Converted categorical features using Label Encoding  
 
-### ✔ Scaling  
+### Scaling  
 - StandardScaler applied to numerical features for model stability  
 
-### ✔ Feature Engineering  
+### Feature Engineering  
 - Created new features such as total discount impact  
 
 ---
 
-## 🔍 Exploratory Data Analysis  
+## Exploratory Data Analysis  
 EDA included:  
 - Distribution plots (histograms, boxplots)  
 - Outlier inspection  
@@ -65,7 +65,7 @@ EDA included:
 
 ---
 
-## 🤖 Machine Learning Models  
+## Machine Learning Models  
 
 ### **1. Linear Regression (Baseline)**  
 - Simple, interpretable model  
@@ -79,7 +79,7 @@ EDA included:
 
 ---
 
-## ⚙️ Hyperparameter Tuning  
+## Hyperparameter Tuning  
 GridSearchCV was used to optimise Random Forest parameters:
 Best parameters achieved:{'n_estimators': 200, 'max_depth': None, 'min_samples_split': 2}
 
@@ -100,14 +100,14 @@ Random Forest (Tuned)	  145.9	                   439.7	           0.9998
 
 Random Forest significantly outperformed Linear Regression.
 
-🔁 **Cross‑Validation**
+ **Cross‑Validation**
 5‑fold CV was applied to validate model robustness.
 
 Linear Regression: Mean R² = 1.0
 
 Random Forest: Mean R² ≈ 0.9981
 
-📈 **Visualisations**
+ **Visualisations**
 The notebook includes:
 
 Histograms
@@ -122,7 +122,7 @@ Cross‑validation boxplots
 
 Comparative bar charts (MAE/RMSE)
 
-🧠 **Key Insights**
+ **Key Insights**
 Original Price is the strongest predictor of Selling Price
 
 Discounts influence price but do not change overall pricing trends
@@ -131,7 +131,7 @@ RAM and Storage have moderate impact
 
 Brand has limited influence compared to technical specifications
 
-🚀 **Future Improvements**
+ **Future Improvements**
 Add advanced models (XGBoost, SVR)
 
 Expand feature engineering
@@ -139,3 +139,16 @@ Expand feature engineering
 Include time‑series pricing trends
 
 Apply SHAP for model explainability
+
+
+---
+
+## Author
+
+Abdulrazig I Adam
+
+---
+
+## License
+
+This project is for educational and portfolio purposes.
